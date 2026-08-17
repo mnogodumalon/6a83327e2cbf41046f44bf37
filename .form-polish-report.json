@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Mitglieder": {
+      "placeholders_set": 9,
+      "defaults_keys": ["status", "eintrittsdatum"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten-Entity für Gremiumsmitglieder ohne Berechnungen. Keine Number-Felder mit Produkt-Semantik, keine Datum-Paare mit Dauer-Beziehung, keine applookup-Felder mit Preis-Targets."
+    },
+    "Sitzungen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["datum_uhrzeit", "anmeldefrist", "art", "einladungsstatus", "max_teilnehmer"],
+      "computed_keys": [],
+      "reason": "Sitzungs-Verwaltung mit Stammdaten und zwei Datum-Feldern ohne Dauer-Beziehung. Number-Feld max_teilnehmer ist nicht berechenbar (keine Mengen × Preise oder Dauer-Abhängigkeit). Keine applookup mit Preis-Targets."
+    },
+    "Tagesordnungspunkte": {
+      "placeholders_set": 7,
+      "defaults_keys": ["reihenfolge", "dauer", "typ"],
+      "computed_keys": [],
+      "reason": "Tagesordnungspunkte sind reine Verwaltungsentitäten mit zwei unabhängigen Number-Feldern (reihenfolge, dauer in Minuten). Keine Beziehung zwischen den Zahlfeldern, keine Produkt-Formeln, keine applookup mit Preis-Ziel."
+    },
+    "Protokolle": {
+      "placeholders_set": 7,
+      "defaults_keys": ["erstellungsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Protokoll-Verwaltung mit Stammdaten. Keine Number-Felder, keine Datums-Durations-Paare, keine applookup mit Preis-Semantik. Reine Dokumentation und Referenzierung."
+    },
+    "Feedback": {
+      "placeholders_set": 6,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Feedback-Erfassung zu TOP mit Kategorie- und Bewertungs-Lookups. Keine Number-Felder, keine Dauer-Beziehungen, keine applookup mit Preis-Targets. Reine Meinungserfassung."
+    },
+    "Notizen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["datum", "prioritaet"],
+      "computed_keys": [],
+      "reason": "Flexible Notiz-Verwaltung mit Bezügen zu mehreren Entities (Sitzung, TOP, Protokoll, Mitglied). Keine Number-Felder, keine Berechnungen. Reine Dokumentation und Querverweis."
+    }
+  }
+}

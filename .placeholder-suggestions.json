@@ -1,0 +1,63 @@
+{
+  "MitgliederDialog.tsx": {
+    "vorname": "z. B. Max",
+    "nachname": "z. B. Müller",
+    "email": "z. B. max@example.com",
+    "telefon": "z. B. +49 30 12345678",
+    "funktion": "z. B. Vorsitzender",
+    "abteilung": "z. B. Marketing",
+    "eintrittsdatum": "Wann ist das Mitglied beigetreten?",
+    "status": "Wähle einen Status",
+    "anmerkungen": "Besonderheiten, Kontaktinfos..."
+  },
+  "SitzungenDialog.tsx": {
+    "titel": "z. B. Jahressitzung 2026",
+    "datum_uhrzeit": "Wann findet die Sitzung statt?",
+    "ort": "z. B. Konferenzraum A",
+    "art": "Wähle die Sitzungsart",
+    "beschreibung": "Agenda-Punkte, Ziele...",
+    "anmeldefrist": "Bis wann können sich Mitglieder anmelden?",
+    "max_teilnehmer": "z. B. 30",
+    "einladungsstatus": "Status der Einladung",
+    "einlade_link": "z. B. https://example.com/sitzung/123",
+    "eingeladene_mitglieder": "Welche Mitglieder einladen?",
+    "angemeldete_mitglieder": "Welche Mitglieder haben sich angemeldet?"
+  },
+  "TagesordnungspunkteDialog.tsx": {
+    "sitzung": "Zu welcher Sitzung gehört dieser TOP?",
+    "punkt_titel": "z. B. Kassenbericht",
+    "typ": "Wähle einen Typ",
+    "beschreibung": "Kontext, Hintergrund...",
+    "reihenfolge": "z. B. 1",
+    "dauer": "z. B. 15",
+    "referent": "Wer präsentiert diesen Punkt?"
+  },
+  "ProtokolleDialog.tsx": {
+    "sitzung": "Zu welcher Sitzung gehört dieses Protokoll?",
+    "erstellungsdatum": "Wann wurde das Protokoll erstellt?",
+    "protokollfuehrer": "Wer hat protokolliert?",
+    "status": "Status des Protokolls",
+    "anwesende_mitglieder": "Welche Mitglieder waren anwesend?",
+    "zusammenfassung": "Kurzfassung der Sitzung...",
+    "beschluesse": "Getroffene Beschlüsse, eine pro Zeile..."
+  },
+  "FeedbackDialog.tsx": {
+    "tagesordnungspunkt": "Zu welchem TOP ist das Feedback?",
+    "mitglied": "Wer gibt das Feedback?",
+    "kategorie": "Wähle eine Kategorie",
+    "bewertung": "Wie bewertest du den Punkt?",
+    "datum": "Wann wurde das Feedback gegeben?",
+    "kommentar": "Dein Kommentar, Feedback, Vorschlag..."
+  },
+  "NotizenDialog.tsx": {
+    "titel": "z. B. Nachbereitung Kassenbericht",
+    "notiztext": "Inhalt der Notiz, Erkenntnisse...",
+    "prioritaet": "Wie wichtig ist diese Notiz?",
+    "datum": "Wann wurde die Notiz erstellt?",
+    "ersteller": "Wer hat diese Notiz erstellt?",
+    "sitzung": "Zu welcher Sitzung gehört diese Notiz?",
+    "tagesordnungspunkt": "Zu welchem TOP gehört diese Notiz?",
+    "protokoll": "Zu welchem Protokoll gehört diese Notiz?",
+    "mitglied": "Zu welchem Mitglied gehört diese Notiz?"
+  }
+}

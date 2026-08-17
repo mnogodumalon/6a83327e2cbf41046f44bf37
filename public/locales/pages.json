@@ -1,0 +1,29 @@
+{
+  "pages": {
+    "en": {
+      "Alle Protokolle freigegeben": "All Minutes Released",
+      "Einladung für {0} versandt": "Invitation sent for {0}",
+      "Einladung versenden": "Send Invitation",
+      "Einladungen offen": "Open Invitations",
+      "Entwurf": "Draft",
+      "Feedback gesamt": "Total Feedback",
+      "Freigeben": "Release",
+      "Keine kommenden Sitzungen — neue anlegen": "No upcoming sessions — create a new one",
+      "Noch keine Protokolle — nach der Sitzung anlegen": "No minutes yet — create after the session",
+      "Noch keine Sitzungen geplant. Lege die erste an!": "No sessions scheduled yet. Create the first one!",
+      "Nächste Sitzung: {0} am {1} — {2} und weitere Mitglieder.": "Next Session: {0} on {1} — {2} and more members.",
+      "Nächste Sitzungen": "Upcoming Sessions",
+      "Protokoll": "Minutes",
+      "Protokoll anlegen": "Create Minutes",
+      "Protokoll freigeben": "Release Minutes",
+      "Protokoll für {0} freigegeben": "Minutes released for {0}",
+      "Protokolle im Entwurf": "Minutes in Draft",
+      "Sitzung": "Session",
+      "Sitzung anlegen": "Create Session",
+      "Versenden": "Send",
+      "{0} aktive Mitglieder im Gremium.": "{0} active members in the committee.",
+      "— Einladung noch nicht versandt.": "— Invitation not yet sent."
+    }
+  },
+  "v": 1
+}
