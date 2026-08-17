@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "sitzungsanmeldung",
+      "component": "SitzungsAnmeldung",
+      "title": "Sitzungsanmeldung",
+      "link_param": {
+        "name": "sitzung",
+        "entity": "sitzungen",
+        "label_field": "titel",
+        "secondary_field": "datum_uhrzeit"
+      },
+      "endpoints": [
+        {
+          "entity": "sitzungen",
+          "op": "list",
+          "fields": [
+            "titel",
+            "datum_uhrzeit",
+            "ort",
+            "art",
+            "beschreibung",
+            "anmeldefrist",
+            "max_teilnehmer",
+            "angemeldete_mitglieder"
+          ],
+          "scope_description": "Alle Sitzungen, zu denen eine Anmeldung möglich ist"
+        },
+        {
+          "entity": "mitglieder",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "email",
+            "telefon"
+          ]
+        },
+        {
+          "entity": "sitzungen",
+          "op": "update",
+          "fields": [
+            "angemeldete_mitglieder"
+          ],
+          "scope_description": "Erlaubt das Anhängen eines neuen Mitglieds an die Anmeldeliste der Sitzung"
+        }
+      ]
+    }
+  ]
+}

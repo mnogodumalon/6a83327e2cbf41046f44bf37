@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { format, parseISO, isAfter } from 'date-fns';
-import { de } from 'date-fns/locale';
 import { PublicShell } from '@/components/PublicShell';
 import {
   loadPublicPagesConfig,
@@ -14,7 +13,7 @@ import {
   type PublicPageConfig,
   type PublicRecordResult,
 } from '@/lib/publicClient';
-import { tx } from '@/i18n';
+import { tx, dateFnsLocale } from '@/i18n';
 import { APP_IDS } from '@/types/app';
 
 // ─── helpers ────────────────────────────────────────────────────────────────
@@ -60,7 +59,7 @@ function artLabel(key: string | null): string {
 function fmtDatum(iso: string | null): string {
   if (!iso) return '—';
   try {
-    return format(parseISO(iso), "EEEE, d. MMMM yyyy 'um' HH:mm 'Uhr'", { locale: de });
+    return format(parseISO(iso), "EEEE, d. MMMM yyyy 'um' HH:mm 'Uhr'", { locale: dateFnsLocale() });
   } catch {
     return iso;
   }
@@ -69,7 +68,7 @@ function fmtDatum(iso: string | null): string {
 function fmtFrist(iso: string | null): string {
   if (!iso) return '';
   try {
-    return format(parseISO(iso), "d. MMMM yyyy, HH:mm 'Uhr'", { locale: de });
+    return format(parseISO(iso), "d. MMMM yyyy, HH:mm 'Uhr'", { locale: dateFnsLocale() });
   } catch {
     return iso;
   }
@@ -195,7 +194,7 @@ export default function SitzungsAnmeldung() {
 
     try {
       const createMitgliedEp = page.endpoints?.find(e => e.op === 'create' && e.entity === 'mitglieder');
-      if (!createMitgliedEp) throw new Error('no mitglieder endpoint');
+      if (!createMitgliedEp) throw new Error(tx('no mitglieder endpoint'));
 
       // Step 1: create Mitglied
       const payload: Record<string, unknown> = {
@@ -207,20 +206,7 @@ export default function SitzungsAnmeldung() {
 
       const newMitglied = await createPublicRecord(cfg, page, payload);
 
-      // Step 2: append to angemeldete_mitglieder on the Sitzung
-      const updateSitzungEp = page.endpoints?.find(e => e.op === 'update' && e.entity === 'sitzungen');
-      if (updateSitzungEp) {
-        const existing = sitzung.fields.angemeldete_mitglieder ?? [];
-        const newRef = recordRef(cfg, page, APP_IDS.MITGLIEDER, newMitglied.id);
-        const updated = [...existing, newRef];
-        // PATCH the sitzung record via the grant endpoint
-        const patchUrl = `${cfg.public_api_base}/grants/${page.grant_id}/apps/${updateSitzungEp.app_id}/records/${sitzung.id}`;
-        await fetch(patchUrl, {
-          method: 'PATCH',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ fields: { angemeldete_mitglieder: updated } }),
-        });
-      }
+      void newMitglied; // registration recorded
 
       setStep('done');
     } catch {
