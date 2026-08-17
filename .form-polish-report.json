@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Mitglieder": {
+      "placeholders_set": 9,
+      "defaults_keys": ["eintrittsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten (Kontakte, Funktionen), keine Preise, keine Mengen, keine Datumspaare → keine computed-Formeln sinnvoll"
+    },
+    "Sitzungen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["datum_uhrzeit", "anmeldefrist", "art", "einladungsstatus"],
+      "computed_keys": [],
+      "reason": "Ereignissammlung mit Datum und Anmeldefrist (unabhängige Events), multipleapplookup ohne Preise → keine computed-Formeln"
+    },
+    "Tagesordnungspunkte": {
+      "placeholders_set": 7,
+      "defaults_keys": ["reihenfolge"],
+      "computed_keys": [],
+      "reason": "Ordnungs- und Dauer-Metadaten (reihenfolge, dauer in Minuten), Applookup ohne Preis-Target → keine Berechnung sinnvoll"
+    },
+    "Protokolle": {
+      "placeholders_set": 7,
+      "defaults_keys": ["erstellungsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Dokumentation einer Sitzung (Zusammenfassung, Beschlüsse, Anwesende), keine numerischen Felder, keine Preise"
+    },
+    "Feedback": {
+      "placeholders_set": 6,
+      "defaults_keys": ["kategorie", "datum"],
+      "computed_keys": [],
+      "reason": "Feedback und Bewertung auf Tagesordnungspunkte (Lookup-Felder mit Kategorien und Skala 1-5), keine Preise, keine Multiplikatoren"
+    },
+    "Notizen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["datum", "prioritaet"],
+      "computed_keys": [],
+      "reason": "Flexible Notizen mit Bezügen zu anderen Entities (Sitzung, TOP, Protokoll, Mitglied), keine numerischen Beziehungen"
+    }
+  }
+}

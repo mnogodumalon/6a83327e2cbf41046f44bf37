@@ -1,0 +1,10 @@
+{"debug":"Calling MCP tool: build_public_pages","timestamp":"2026-08-17T16:33:16.875Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_public_pages' completed successfully in 8ms","timestamp":"2026-08-17T16:33:16.883Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Calling MCP tool: build_intent_pages","timestamp":"2026-08-17T16:33:50.573Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' still running (30s elapsed)","timestamp":"2026-08-17T16:34:20.574Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' still running (60s elapsed)","timestamp":"2026-08-17T16:34:50.575Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' still running (90s elapsed)","timestamp":"2026-08-17T16:35:20.575Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' still running (120s elapsed)","timestamp":"2026-08-17T16:35:50.576Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' still running (150s elapsed)","timestamp":"2026-08-17T16:36:20.576Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' still running (180s elapsed)","timestamp":"2026-08-17T16:36:50.576Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}
+{"debug":"Tool 'build_intent_pages' completed successfully in 3m 6s","timestamp":"2026-08-17T16:36:56.992Z","sessionId":"3cb39da7-2f27-497a-b407-64957db863b7","cwd":"/home/user/app"}

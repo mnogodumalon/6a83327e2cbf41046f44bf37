@@ -1,0 +1,63 @@
+{
+  "MitgliederDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Müller",
+    "email": "z. B. anna.mueller@org.de",
+    "telefon": "z. B. +49 30 123456",
+    "funktion": "z. B. Vorsitzende, Kassier",
+    "abteilung": "z. B. Personalabteilung",
+    "eintrittsdatum": "Wann beigetreten?",
+    "status": "z. B. Aktiv, Inaktiv",
+    "anmerkungen": "Besonderheiten, Kontaktinfos..."
+  },
+  "SitzungenDialog.tsx": {
+    "titel": "z. B. Jahreshauptversammlung",
+    "datum_uhrzeit": "Wann findet die Sitzung statt?",
+    "ort": "z. B. Raum A, Konferenzraum Nord",
+    "art": "z. B. Ordentlich, Außerordentlich",
+    "beschreibung": "Themen, Agenda, Überblick...",
+    "anmeldefrist": "Anmeldefrist setzen",
+    "max_teilnehmer": "z. B. 50",
+    "einlade_link": "z. B. https://…",
+    "einladungsstatus": "z. B. Entwurf, Versandt",
+    "eingeladene_mitglieder": "Welche Mitglieder einladen?",
+    "angemeldete_mitglieder": "Wer hat sich angemeldet?"
+  },
+  "TagesordnungspunkteDialog.tsx": {
+    "sitzung": "Zu welcher Sitzung?",
+    "punkt_titel": "z. B. Begrüßung und Formales",
+    "beschreibung": "Inhalt, Ziele, Diskussionspunkte...",
+    "reihenfolge": "z. B. 1",
+    "dauer": "z. B. 15",
+    "typ": "z. B. Information, Beschluss",
+    "referent": "Wer leitet den Punkt?"
+  },
+  "ProtokolleDialog.tsx": {
+    "sitzung": "Protokoll für welche Sitzung?",
+    "erstellungsdatum": "Wann wurde das Protokoll erstellt?",
+    "protokollfuehrer": "Wer hat protokolliert?",
+    "anwesende_mitglieder": "Welche Mitglieder waren anwesend?",
+    "zusammenfassung": "Kurzer Überblick über den Verlauf...",
+    "beschluesse": "Gefasste Beschlüsse, jeweils eine Zeile",
+    "status": "z. B. Entwurf, Freigegeben"
+  },
+  "FeedbackDialog.tsx": {
+    "tagesordnungspunkt": "Zu welchem TOP?",
+    "mitglied": "Feedback von welchem Mitglied?",
+    "kategorie": "z. B. Zustimmung, Ablehnung",
+    "bewertung": "z. B. 1 – Sehr gut",
+    "kommentar": "Feedback, Anmerkungen, Begründung...",
+    "datum": "Wann das Feedback gegeben?"
+  },
+  "NotizenDialog.tsx": {
+    "titel": "z. B. Folgeaufgabe: Bericht bis 15.9.",
+    "notiztext": "Inhalte, Gedanken, Aufgaben, Notizen...",
+    "datum": "Gültig ab wann?",
+    "prioritaet": "z. B. Niedrig, Mittel, Hoch",
+    "ersteller": "Wer hat die Notiz erstellt?",
+    "sitzung": "Bezug zu welcher Sitzung?",
+    "tagesordnungspunkt": "Bezug zu welchem TOP?",
+    "protokoll": "Bezug zu welchem Protokoll?",
+    "mitglied": "Bezug zu welchem Mitglied?"
+  }
+}

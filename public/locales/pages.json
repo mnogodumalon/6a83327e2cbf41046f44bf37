@@ -1,0 +1,32 @@
+{
+  "pages": {
+    "en": {
+      "Aktive Mitglieder": "Active Members",
+      "Alle Einladungen sind versandt.": "All invitations have been sent.",
+      "Alle Protokolle sind freigegeben.": "All minutes have been released.",
+      "Alle Sitzungen liegen in der Vergangenheit.": "All meetings are in the past.",
+      "Einladung für \"{0}\" noch nicht versandt.": "Invitation for \"{0}\" not yet sent.",
+      "Einladung für \"{0}\" versandt": "Invitation for \"{0}\" sent",
+      "Einladung versenden": "Send Invitation",
+      "Einladungen ausstehend": "Invitations Pending",
+      "Einladungen versenden": "Send Invitations",
+      "Entwurf": "Draft",
+      "Freigeben": "Release",
+      "Letzte Notizen": "Recent Notes",
+      "Neue Notiz": "New Note",
+      "Neue Sitzung": "New Meeting",
+      "Neues Protokoll": "New Minutes",
+      "Noch keine Sitzungen geplant — leg die erste an.": "No meetings scheduled yet — create the first one.",
+      "Nächste Sitzung: {0}": "Next Meeting: {0}",
+      "Nächste Sitzung: {0} am {1}": "Next Meeting: {0} on {1}",
+      "Protokoll freigeben": "Release Minutes",
+      "Protokoll freigegeben": "Minutes Released",
+      "Protokolle freigeben": "Release Minutes",
+      "Protokolle im Entwurf": "Minutes in Draft",
+      "Sitzung": "Meeting",
+      "Versenden": "Send",
+      "{0} Sitzungen warten auf den Einladungsversand — zuerst: {1}.": "{0} meetings are awaiting invitation sending — first: {1}."
+    }
+  },
+  "v": 1
+}
