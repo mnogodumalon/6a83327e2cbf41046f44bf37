@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "sitzungsanmeldung",
+      "component": "Sitzungsanmeldung",
+      "title": "Sitzungsanmeldung",
+      "link_param": {
+        "name": "sitzung_id",
+        "entity": "sitzungen",
+        "label_field": "titel",
+        "secondary_field": "datum_uhrzeit"
+      },
+      "endpoints": [
+        {
+          "entity": "sitzungen",
+          "op": "list",
+          "fields": [
+            "titel",
+            "datum_uhrzeit",
+            "ort",
+            "art",
+            "beschreibung",
+            "anmeldefrist",
+            "max_teilnehmer",
+            "angemeldete_mitglieder"
+          ],
+          "scope": "r.v_einladungsstatus == 'versandt'",
+          "scope_description": "zeigt nur Sitzungen, bei denen Einladungen bereits versandt wurden",
+          "max_records": 200
+        },
+        {
+          "entity": "mitglieder",
+          "op": "create",
+          "fields": [
+            "vorname",
+            "nachname",
+            "email"
+          ],
+          "preset_fields": {
+            "status": "aktiv"
+          }
+        }
+      ]
+    }
+  ]
+}

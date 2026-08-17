@@ -24,7 +24,7 @@ import { t } from '@/i18n';
  *     items={maengelVon(b.record_id)}
  *     getKey={m => m.record_id}
  *     map={m => ({ name: m.fields.typ, label: m.fields.prioritaet?.label, meta: m.fields.beschreibung, icon: IconAlertTriangle })}
- *     onOpen={m => overlay.push({ typ: 'mangel', id: m.record_id })}   // DETAIL, not edit
+ *     onOpen={m => overlay.push({ type: 'maengel', id: m.record_id })}   // DETAIL, not edit
  *     onAdd={() => openCreate('maengelerfassung', b.record_id)}        // the "+"
  *   />
  */

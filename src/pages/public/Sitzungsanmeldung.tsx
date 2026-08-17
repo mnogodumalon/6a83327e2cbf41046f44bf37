@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { format, parseISO, isBefore } from 'date-fns';
-import { de } from 'date-fns/locale';
 import {
   IconCalendar,
   IconMapPin,
@@ -22,7 +21,7 @@ import {
   type PublicPageConfig,
   type PublicRecordResult,
 } from '@/lib/publicClient';
-import { tx } from '@/i18n';
+import { tx, dateFnsLocale } from '@/i18n';
 
 // App-IDs aus app_metadata.json
 const APP_SITZUNGEN = '6a8332541add4699ccc0e8f8';
@@ -39,17 +38,10 @@ interface SitzungFields {
   angemeldete_mitglieder?: string[];
 }
 
-const ART_LABELS: Record<string, string> = {
-  ordentlich: 'Ordentliche Sitzung',
-  ausserordentlich: 'Außerordentliche Sitzung',
-  klausur: 'Klausursitzung',
-  information: 'Informationssitzung',
-};
-
 function formatDateTime(iso: string | undefined): string {
   if (!iso) return '—';
   try {
-    return format(parseISO(iso), 'EEEE, d. MMMM yyyy, HH:mm \'Uhr\'', { locale: de });
+    return format(parseISO(iso), 'EEEE, d. MMMM yyyy, HH:mm \'Uhr\'', { locale: dateFnsLocale() });
   } catch {
     return iso;
   }
@@ -58,7 +50,7 @@ function formatDateTime(iso: string | undefined): string {
 function formatDeadline(iso: string | undefined): string {
   if (!iso) return '—';
   try {
-    return format(parseISO(iso), 'd. MMMM yyyy, HH:mm \'Uhr\'', { locale: de });
+    return format(parseISO(iso), 'd. MMMM yyyy, HH:mm \'Uhr\'', { locale: dateFnsLocale() });
   } catch {
     return iso;
   }
@@ -74,6 +66,13 @@ function isDeadlinePassed(iso: string | undefined): boolean {
 }
 
 export default function Sitzungsanmeldung() {
+  const ART_LABELS: Record<string, string> = {
+  ordentlich: 'Ordentliche Sitzung',
+  ausserordentlich: 'Außerordentliche Sitzung',
+  klausur: 'Klausursitzung',
+  information: 'Informationssitzung',
+};
+
   const [searchParams] = useSearchParams();
   const sitzungId = searchParams.get('sitzung_id');
 
@@ -113,7 +112,7 @@ export default function Sitzungsanmeldung() {
     listPublicRecords(cfg, page, { appId: APP_SITZUNGEN, limit: 200 })
       .then(records => {
         const all = Object.values(records) as (PublicRecordResult & { fields: SitzungFields })[];
-        const found = all.find(r => r.record_id === sitzungId);
+        const found = all.find(r => r.id === sitzungId);
         if (found) {
           setSitzung(found);
         } else {

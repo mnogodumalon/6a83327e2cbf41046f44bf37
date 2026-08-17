@@ -23,6 +23,8 @@ import FeedbackDetailPage from '@/pages/FeedbackDetailPage';
 import NotizenPage from '@/pages/NotizenPage';
 import NotizenDetailPage from '@/pages/NotizenDetailPage';
 // <custom:imports>
+const IntentSitzungEinladenPage = lazy(() => import('@/pages/intents/SitzungEinladenPage'));
+const IntentProtokollAnlegenPage = lazy(() => import('@/pages/intents/ProtokollAnlegenPage'));
 // </custom:imports>
 
 // Lazy: public pages live outside <Layout> and only load on /#/public/:slug —
@@ -77,6 +79,8 @@ export default function App() {
                 <Route path="admin" element={<AdminPage />} />
                 <Route path="verwaltung/oeffentliche-seiten" element={<PublicPagesAdmin />} />
                 {/* <custom:routes> */}
+                <Route path="intents/sitzung-einladen" element={<Suspense fallback={null}><IntentSitzungEinladenPage /></Suspense>} />
+                <Route path="intents/protokoll-anlegen" element={<Suspense fallback={null}><IntentProtokollAnlegenPage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>
