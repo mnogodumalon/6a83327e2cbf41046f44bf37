@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Mitglieder": {
+      "placeholders_set": 9,
+      "defaults_keys": ["eintrittsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten — Vorname, Nachname, Kontaktdaten, Abteilung, Status (aktiv/inaktiv). Keine Number-Felder, keine Applookup-Ketten, nichts berechenbar. Nur minimale Defaults: Eintrittsdatum=heute, Status=Aktiv (häufigster Fall)."
+    },
+    "Sitzungen": {
+      "placeholders_set": 10,
+      "defaults_keys": ["datum_uhrzeit", "anmeldefrist", "art", "einladungsstatus"],
+      "computed_keys": [],
+      "reason": "Organisations-Stammdaten einer Sitzung — Titel, Datum/Uhrzeit, Ort, Kapazität, Einladungsstatus, Mitglieder-Listen. Das max_teilnehmer-Feld ist eine Kapazitätsgröße (keine Preisposition), dauer-artige Felder gibt es nicht. Keine berechenbaren Aggregationen."
+    },
+    "Tagesordnungspunkte": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Agenda-Einträge zu Sitzungen — Titel, Reihenfolge, Typ (Info/Beschluss/Diskussion), geplante Dauer (Minuten für die Tagesplanung, nicht für Abrechnungen), Referent. Keine Beziehung zwischen Dauer und Kosten/Preis — reine Organisationsdaten."
+    },
+    "Protokolle": {
+      "placeholders_set": 7,
+      "defaults_keys": ["erstellungsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Dokumentation einer Sitzung — Protokollführer, anwesende Mitglieder, Zusammenfassung, Beschlüsse, Status (Entwurf/Freigegeben). Keine Mengen, Preise oder zeitabhängigen Berechnungen — reines Reporting."
+    },
+    "Feedback": {
+      "placeholders_set": 6,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Feedback-Einträge zu Tagesordnungspunkten — Kategorie (Zustimmung/Ablehnung/Enthaltung/Anmerkung), Bewertung (Skalen-Lookup 1–5), Kommentar. Das bewertung-Feld ist ein Lookup-Key (bewertung_1 bis bewertung_5), nicht numerisch oder berechenbar."
+    },
+    "Notizen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Notizen-Management mit Bezügen zu anderen Entities (Sitzungen, Tagesordnungspunkte, Protokolle, Mitglieder). Priorität ist ein einfaches Lookup (niedrig/mittel/hoch). Keine Mengen, Dauern, Preise — reine freie Dokumentation."
+    }
+  }
+}

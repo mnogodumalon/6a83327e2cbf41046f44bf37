@@ -1,0 +1,11 @@
+{
+  "pages": [
+    {
+      "file": "src/pages/public/Sitzungsanmeldung.tsx",
+      "component": "Sitzungsanmeldung",
+      "slug": "sitzungsanmeldung",
+      "ok": true,
+      "error": null
+    }
+  ]
+}

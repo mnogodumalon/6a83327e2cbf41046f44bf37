@@ -1,0 +1,32 @@
+{
+  "pages": {
+    "en": {
+      "Aktive Mitglieder": "Active Members",
+      "Alle vergangenen Sitzungen haben ein Protokoll.": "All past sessions have minutes.",
+      "Als versandt markieren": "Mark as sent",
+      "Anzeigen": "View",
+      "Einladung als versandt markieren": "Mark invitation as sent",
+      "Einladung für „{0}\" noch nicht versandt.": "Invitation for \"{0}\" not yet sent.",
+      "Einladungsstatus auf \"Versandt\" gesetzt": "Invitation status set to \"Sent\"",
+      "Keine wichtigen Notizen vorhanden.": "No important notes available.",
+      "Neue Notiz": "New Note",
+      "Neue Sitzung": "New Session",
+      "Neue Sitzung planen": "Schedule new session",
+      "Noch keine Sitzungen geplant — plane jetzt die erste.": "No sessions scheduled yet — plan the first one now.",
+      "Notiz": "Note",
+      "Nächste Sitzung: {0} am {1}.": "Next session: {0} on {1}.",
+      "Offene Protokoll-Entwürfe": "Open minutes drafts",
+      "Ohne Protokoll": "Without minutes",
+      "Protokoll erstellen": "Create minutes",
+      "Protokoll freigeben": "Release minutes",
+      "Protokoll freigegeben": "Minutes released",
+      "Sitzung": "Session",
+      "Vergangene Sitzungen ohne Protokoll": "Past sessions without minutes",
+      "Versandt": "Sent",
+      "Wichtige Notizen": "Important Notes",
+      "{0} Einladungen noch nicht versandt.": "{0} invitations not yet sent.",
+      "{0} — Einladung noch nicht versandt. Nächste: {1} am {2}.": "{0} — Invitation not yet sent. Next: {1} on {2}."
+    }
+  },
+  "v": 1
+}

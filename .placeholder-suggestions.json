@@ -1,0 +1,62 @@
+{
+  "MitgliederDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Schmidt",
+    "email": "z. B. anna@example.de",
+    "telefon": "z. B. 030 123456",
+    "funktion": "z. B. Vorsitzende",
+    "abteilung": "z. B. Bereich Forschung",
+    "eintrittsdatum": "Wann ist der Eintritt?",
+    "status": "Aktiv oder Inaktiv",
+    "anmerkungen": "Besonderheiten, Kontaktdaten..."
+  },
+  "SitzungenDialog.tsx": {
+    "titel": "z. B. Jahreshauptversammlung 2026",
+    "datum_uhrzeit": "Wann findet die Sitzung statt?",
+    "ort": "z. B. Raum 301, Hauptgebäude",
+    "art": "Art der Sitzung wählen",
+    "beschreibung": "Tagesordnung, Agenda-Punkte, sonstige Hinweise...",
+    "anmeldefrist": "Anmeldefrist wählen",
+    "max_teilnehmer": "z. B. 50",
+    "einladungsstatus": "Status der Einladung",
+    "eingeladene_mitglieder": "Welche Mitglieder einladen?",
+    "angemeldete_mitglieder": "Wer hat sich angemeldet?"
+  },
+  "TagesordnungspunkteDialog.tsx": {
+    "sitzung": "Zu welcher Sitzung gehört dieser Punkt?",
+    "punkt_titel": "z. B. Bericht des Vorstandes",
+    "reihenfolge": "z. B. 1",
+    "typ": "Punkt-Typ wählen",
+    "dauer": "z. B. 15 (Minuten)",
+    "beschreibung": "Details, erwartete Ergebnisse...",
+    "referent": "Wer leitet diesen Punkt?"
+  },
+  "ProtokolleDialog.tsx": {
+    "sitzung": "Für welche Sitzung ist das Protokoll?",
+    "erstellungsdatum": "Wann wurde es erstellt?",
+    "protokollfuehrer": "Wer hat protokolliert?",
+    "anwesende_mitglieder": "Welche Mitglieder waren anwesend?",
+    "status": "Entwurf oder freigegeben?",
+    "zusammenfassung": "Verlauf, wichtige Punkte, Diskussionen...",
+    "beschluesse": "Gefasste Beschlüsse und Entscheidungen..."
+  },
+  "FeedbackDialog.tsx": {
+    "tagesordnungspunkt": "Zu welchem Punkt das Feedback?",
+    "mitglied": "Von welchem Mitglied?",
+    "kategorie": "Art des Feedbacks",
+    "bewertung": "Bewertung von 1–5",
+    "kommentar": "Detailliertes Feedback, Anmerkungen...",
+    "datum": "Wann gegeben?"
+  },
+  "NotizenDialog.tsx": {
+    "titel": "z. B. Diskussion zukünftige Termine",
+    "notiztext": "Inhalt der Notiz, Stichpunkte, Ergebnisse...",
+    "prioritaet": "Wichtigkeit festlegen",
+    "datum": "Notiz vom welchen Datum?",
+    "ersteller": "Wer hat die Notiz erstellt?",
+    "sitzung": "Gehört zu welcher Sitzung?",
+    "tagesordnungspunkt": "Gehört zu welchem Punkt?",
+    "protokoll": "Gehört zu welchem Protokoll?",
+    "mitglied": "Gehört zu welchem Mitglied?"
+  }
+}

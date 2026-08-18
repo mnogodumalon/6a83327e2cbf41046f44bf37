@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "slug": "sitzungsanmeldung",
+      "type": "custom",
+      "entity": "mitglieder",
+      "title": "Sitzungsanmeldung",
+      "published": false,
+      "fields": [
+        "vorname",
+        "nachname",
+        "email"
+      ]
+    }
+  ]
+}
