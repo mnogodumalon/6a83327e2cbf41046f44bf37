@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "Mitglieder": {
+      "placeholders_set": 6,
+      "defaults_keys": ["eintrittsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Reine Stammdaten für Gremiumsmitglieder. Keine numerischen Felder, keine Beziehungen mit Preis/Satz-Targets. Eintrittsdatum wird auf heute vorbelegt, Status automatisch auf 'Aktiv' gesetzt."
+    },
+    "Sitzungen": {
+      "placeholders_set": 11,
+      "defaults_keys": ["datum_uhrzeit", "anmeldefrist", "einladungsstatus"],
+      "computed_keys": [],
+      "reason": "Verwaltungs-Entity für Sitzungstermine. Kein Preis-Lookup, keine Menge-×-Preis-Beziehungen. Datumsfelder mit withTime: true für datetimeminute-Typ. Anmeldefrist liegt 3 Tage vor dem Sitzungsdatum."
+    },
+    "Tagesordnungspunkte": {
+      "placeholders_set": 7,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Agenda-Items ohne numerische Abhängigkeiten. Dauer (Minuten) ist reine Eingabe, kein Multiplikator. Applookups sind Strukturverweise (Sitzung, Referent), nicht für Preise."
+    },
+    "Protokolle": {
+      "placeholders_set": 7,
+      "defaults_keys": ["erstellungsdatum", "status"],
+      "computed_keys": [],
+      "reason": "Dokumentations-Entity ohne Preisfelder. Erstellungsdatum auf heute, Protokoll-Status auf 'Entwurf'. Keine berechnbaren Größen zwischen den Feldern."
+    },
+    "Feedback": {
+      "placeholders_set": 6,
+      "defaults_keys": [],
+      "computed_keys": [],
+      "reason": "Bewertungs- und Feedback-Sammlung mit zwei Lookup-Axes (kategorie, bewertung). Keine Zahlfelder, keine Beziehungen zwischen den Kategorie-Optionen, keine Preis-Berechnungen."
+    },
+    "Notizen": {
+      "placeholders_set": 9,
+      "defaults_keys": ["datum"],
+      "computed_keys": [],
+      "reason": "Notiz-Management mit vier optionalen Bezugs-Feldern zu anderen Entities. Kein Number-Feld, keine berechnbaren Größen. Datum wird auf heute vorbelegt."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "MitgliederDialog.tsx": {
+    "vorname": "z. B. Anna",
+    "nachname": "z. B. Mueller",
+    "email": "z. B. anna@example.de",
+    "funktion": "z. B. Vorsitzende, Kassiererin",
+    "abteilung": "z. B. Finanzen, Personal",
+    "eintrittsdatum": "Wann beigetreten?"
+  },
+  "SitzungenDialog.tsx": {
+    "titel": "z. B. Quartalssitzung Q3",
+    "datum_uhrzeit": "Wann findet die Sitzung statt?",
+    "ort": "z. B. Konferenzraum A, Berlin",
+    "art": "Wähle die Art der Sitzung",
+    "beschreibung": "Agenda-Punkte, Themen, besondere Hinweise...",
+    "anmeldefrist": "Bis wann können sich Mitglieder anmelden?",
+    "max_teilnehmer": "z. B. 50",
+    "einlade_link": "z. B. https://...",
+    "einladungsstatus": "Wähle den Status",
+    "eingeladene_mitglieder": "Welche Mitglieder einladen?",
+    "angemeldete_mitglieder": "Wer hat zugesagt?"
+  },
+  "TagesordnungspunkteDialog.tsx": {
+    "sitzung": "Zu welcher Sitzung gehört dieser Punkt?",
+    "punkt_titel": "z. B. Budget für 2025",
+    "beschreibung": "Kontext, Entscheidungsgrundlagen, Ziele...",
+    "reihenfolge": "z. B. 1, 2, 3",
+    "dauer": "z. B. 30",
+    "typ": "Wähle den Typ (Information, Beschluss...)",
+    "referent": "Wer leitet den Punkt?"
+  },
+  "ProtokolleDialog.tsx": {
+    "sitzung": "Zu welcher Sitzung gehört das Protokoll?",
+    "erstellungsdatum": "Wann wurde das Protokoll erstellt?",
+    "protokollfuehrer": "Wer hat das Protokoll geführt?",
+    "anwesende_mitglieder": "Wer war anwesend?",
+    "zusammenfassung": "Wesentliche Ergebnisse, Entscheidungen, Diskussionspunkte...",
+    "beschluesse": "Alle gefassten Beschlüsse, jeweils mit Ergebnis und Verantwortung...",
+    "status": "Ist das Protokoll freigegeben?"
+  },
+  "FeedbackDialog.tsx": {
+    "tagesordnungspunkt": "Zu welchem TOP das Feedback?",
+    "mitglied": "Von welchem Mitglied?",
+    "kategorie": "Wähle die Art des Feedbacks",
+    "bewertung": "Bewerte den Punkt",
+    "kommentar": "Weitere Anmerkungen, Begründung, Vorschläge...",
+    "datum": "Wann wurde das Feedback gegeben?"
+  },
+  "NotizenDialog.tsx": {
+    "titel": "z. B. Personalentwicklung Q3",
+    "notiztext": "Inhalt der Notiz, Gedanken, Beschlüsse, Aufgaben...",
+    "prioritaet": "Wähle die Priorität",
+    "datum": "Wann ist diese Notiz entstanden?",
+    "ersteller": "Wer hat die Notiz erstellt?",
+    "sitzung": "Zu welcher Sitzung gehört die Notiz?",
+    "tagesordnungspunkt": "Zu welchem TOP gehört die Notiz?",
+    "protokoll": "Zu welchem Protokoll gehört die Notiz?",
+    "mitglied": "Zu welchem Mitglied gehört die Notiz?"
+  }
+}

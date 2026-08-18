@@ -1,0 +1,37 @@
+{
+  "slug": "sitzung-anmeldung",
+  "component": "SitzungAnmeldung",
+  "title": "Sitzungsanmeldung",
+  "link_param": {
+    "name": "sitzung_id",
+    "entity": "sitzungen",
+    "label_field": "titel",
+    "secondary_field": "datum_uhrzeit"
+  },
+  "endpoints": [
+    {
+      "entity": "sitzungen",
+      "op": "list",
+      "fields": ["titel", "datum_uhrzeit", "ort", "beschreibung", "anmeldefrist", "max_teilnehmer", "angemeldete_mitglieder"],
+      "scope_description": "zeigt alle Sitzungen (für Zugriff via sitzung_id-Parameter)"
+    },
+    {
+      "entity": "mitglieder",
+      "op": "list",
+      "fields": ["vorname", "nachname", "email"],
+      "scope_description": "zeigt alle Mitglieder für die E-Mail-Prüfung bei der Anmeldung"
+    },
+    {
+      "entity": "mitglieder",
+      "op": "create",
+      "fields": ["vorname", "nachname", "email"],
+      "preset_fields": { "status": "aktiv" }
+    },
+    {
+      "entity": "sitzungen",
+      "op": "update",
+      "fields": ["angemeldete_mitglieder"],
+      "scope_description": "trägt das Mitglied in die angemeldete_mitglieder-Liste der Sitzung ein"
+    }
+  ]
+}

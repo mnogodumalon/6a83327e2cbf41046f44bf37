@@ -1,0 +1,36 @@
+{
+  "pages": {
+    "en": {
+      "Aktive Mitglieder": "Active Members",
+      "Alle Einladungen versandt — nächste Sitzung: {0}": "All invitations sent — next session: {0}",
+      "Alle Einladungen versandt.": "All invitations sent.",
+      "Alle Protokolle sind freigegeben.": "All minutes are approved.",
+      "Alle Sitzungen liegen in der Vergangenheit.": "All sessions are in the past.",
+      "Einladung versenden": "Send Invitation",
+      "Einladungen ausstehend": "Invitations Pending",
+      "Einladungen versenden": "Send Invitations",
+      "Entwurf": "Draft",
+      "Erste Sitzung anlegen": "Create First Session",
+      "Feedback-Einträge": "Feedback Entries",
+      "Freigeben": "Approve",
+      "Keine Sitzungen vorhanden": "No Sessions Available",
+      "Lege die erste Gremiumssitzung an, um loszulegen.": "Create the first board session to get started.",
+      "Neue Sitzung": "New Session",
+      "Noch keine Sitzungen angelegt — leg jetzt die erste an.": "No sessions created yet — create the first one now.",
+      "Nächste Sitzung: {0} am {1}.": "Next Session: {0} on {1}.",
+      "Protokoll erstellen": "Create Minutes",
+      "Protokoll freigeben": "Release Minutes",
+      "Protokolle im Entwurf": "Minutes in Draft",
+      "Protokolle zur Freigabe": "Minutes for Approval",
+      "Sitzung": "Session",
+      "Sitzung abschließen": "Close Session",
+      "Versenden": "Send",
+      "{0} — Einladung versandt": "{0} — Invitation Sent",
+      "{0} — Protokoll freigegeben": "{0} — Minutes Released",
+      "{0} — abgeschlossen": "{0} — Closed",
+      "— Einladung noch nicht versandt.": "— Invitation not yet sent.",
+      "— Einladungen noch nicht versandt.": "— Invitations not yet sent."
+    }
+  },
+  "v": 1
+}
