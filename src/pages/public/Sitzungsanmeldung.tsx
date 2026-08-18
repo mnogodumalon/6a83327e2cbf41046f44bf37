@@ -44,13 +44,6 @@ type Step = 'loading' | 'detail' | 'form' | 'submitting' | 'success' | 'error' |
 // Helpers
 // ---------------------------------------------------------------------------
 
-const ART_LABELS: Record<string, string> = {
-  ordentlich: 'Ordentliche Sitzung',
-  ausserordentlich: 'Außerordentliche Sitzung',
-  klausur: 'Klausursitzung',
-  information: 'Informationssitzung',
-};
-
 function formatDatum(iso: string | undefined): string {
   if (!iso) return '—';
   try {
@@ -74,6 +67,13 @@ function formatFrist(iso: string | undefined): string {
 // ---------------------------------------------------------------------------
 
 export default function Sitzungsanmeldung() {
+  const ART_LABELS: Record<string, string> = {
+  ordentlich: 'Ordentliche Sitzung',
+  ausserordentlich: 'Außerordentliche Sitzung',
+  klausur: 'Klausursitzung',
+  information: 'Informationssitzung',
+};
+
   const [cfg, setCfg] = useState<PublicPagesConfig | null>(null);
   const [page, setPage] = useState<PublicPageConfig | null>(null);
   const [step, setStep] = useState<Step>('loading');
@@ -197,7 +197,7 @@ export default function Sitzungsanmeldung() {
 
       const [mitgliedId] = mitgliedEntry;
       const createEp = page.endpoints?.find(e => e.op === 'create' && e.entity === 'sitzungen');
-      if (!createEp) throw new Error('no create endpoint');
+      if (!createEp) throw new Error(tx('no create endpoint'));
 
       // Mitglied in angemeldete_mitglieder eintragen
       const mitgliedRef = recordRef(cfg, page, mitgliederAppId, mitgliedId);
@@ -209,7 +209,7 @@ export default function Sitzungsanmeldung() {
     } catch (err) {
       if (err instanceof PageUnavailableError) {
         setErrorMsg(tx('Dieser Dienst ist momentan nicht verfügbar. Bitte versuche es später erneut.'));
-      } else if (err instanceof Error && err.message.includes('aktives Mitglied')) {
+      } else if (err instanceof Error && err.message.includes(tx('aktives Mitglied'))) {
         setErrorMsg(err.message);
       } else {
         setErrorMsg(tx('Die Anmeldung konnte nicht abgeschlossen werden. Bitte versuche es erneut.'));
@@ -422,10 +422,10 @@ export default function Sitzungsanmeldung() {
 
               <button
                 type="submit"
-                disabled={step === 'submitting'}
+                disabled={(['submitting'] as string[]).includes(step)}
                 className="w-full rounded-lg bg-primary text-primary-foreground px-4 py-2.5 text-sm font-medium hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 transition-colors"
               >
-                {step === 'submitting' ? (
+                {(step as string) === 'submitting' ? (
                   <>
                     <IconLoader2 size={16} className="animate-spin" />
                     {tx('Anmeldung wird verarbeitet…')}
